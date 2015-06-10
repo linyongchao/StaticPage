@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script src="assets/js/ace-extra.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="navbar navbar-default" id="navbar">
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="icon-leaf"></i>
+							CelLoud原型
+						</small>
+					</a><!-- /.brand -->
+				</div><!-- /.navbar-header -->
+				<div class="navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						<li class="grey">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#" title="通知">
+								<i class="icon-tasks"></i>
+								<span class="badge badge-grey">3</span>
+							</a>
+							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-ok"></i>
+									还有3个任务未完成
+								</li>
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">任务A</span>
+											<span class="pull-right">65%</span>
+										</div>
+										<div class="progress progress-mini ">
+											<div style="width:65%" class="progress-bar "></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">任务B</span>
+											<span class="pull-right">35%</span>
+										</div>
+										<div class="progress progress-mini ">
+											<div style="width:35%" class="progress-bar progress-bar-danger"></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">任务C</span>
+											<span class="pull-right">15%</span>
+										</div>
+										<div class="progress progress-mini ">
+											<div style="width:15%" class="progress-bar progress-bar-warning"></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="notice.html">
+										查看任务详情
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="purple">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#" title="消费记录">
+								<i class="icon-bell-alt icon-animated-bell"></i>
+								<span class="badge badge-important">3</span>
+							</a>
+							<ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-warning-sign"></i>
+									3条消费记录
+								</li>
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-xs no-hover btn-pink icon-comment"></i>
+												存储花费 10 元
+											</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="btn btn-xs btn-primary icon-user"></i>
+										运行 VSP 花费 10 元
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-xs no-hover btn-success icon-shopping-cart"></i>
+												运行 CMP 花费 10 元
+											</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="consume.html">
+										查看所有消费记录
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="green">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#" title="帮助">
+								<i class="icon-envelope icon-animated-vertical"></i>
+								<span class="badge badge-success">3</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-envelope-alt"></i>
+									3条帮助消息
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar">
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Alex:</span>
+												怎么上传数据
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>1分钟以前</span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar">
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Susan:</span>
+												怎么运行数据
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>20分钟以前</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar">
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Bob:</span>
+												问问题的都SB
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>下午3:15</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="help.html">
+										查看所有帮助消息
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo">
+								<span class="user-info">
+									<small>欢迎光临,</small>
+									Demo
+								</span>
+								<i class="icon-caret-down"></i>
+							</a>
+							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="userinfo.html">
+										<i class="icon-user"></i>
+										个人信息
+									</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">
+										<i class="icon-off"></i>
+										退出
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- /.ace-nav -->
+				</div>
+			</div><!-- /.container -->
+		</div>
+		<div class="main-container" id="main-container">
+			<div class="main-container-inner">
+				<a class="menu-toggler" id="menu-toggler" href="#">
+					<span class="menu-text"></span>
+				</a>
+				<div class="sidebar" id="sidebar">
+					<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+						<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+							<span class="btn btn-success"></span>
+
+							<span class="btn btn-info"></span>
+
+							<span class="btn btn-warning"></span>
+
+							<span class="btn btn-danger"></span>
+						</div>
+					</div><!-- #sidebar-shortcuts -->
+
+					<ul class="nav nav-list">
+						<li>
+							<a href="info.html">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text"> 个人信息 </span>
+							</a>
+						</li>
+
+						<li>
+							<a href="data.html">
+								<i class="icon-text-width"></i>
+								<span class="menu-text"> 数据 </span>
+							</a>
+						</li>
+						<li>
+							<a href="app.html">
+								<i class="icon-list-alt"></i>
+								<span class="menu-text"> app </span>
+							</a>
+						</li>
+
+						<li>
+							<a href="task.html">
+								<i class="icon-calendar"></i>
+								<span class="menu-text">
+									任务
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="report.html">
+								<i class="icon-picture"></i>
+								<span class="menu-text"> 报告 </span>
+							</a>
+						</li>
+						<li>
+							<a href="qa.html">
+								<i class="icon-tag"></i>
+								<span class="menu-text"> 联系我们 </span>
+							</a>
+						</li>
+					</ul>
+					<div class="sidebar-collapse" id="sidebar-collapse">
+						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="index.html">首页</a>
+							</li>
+							<li class="active">
+								<span id="banner">帮助</span>
+							</li>
+						</ul>
+					</div>
+					<div class="page-content">
+							<div class="col-xs-12" id="rowDiv">
+							
+<style>
+#nav-search-input{
+	line-height: 1.8
+}
+.totop{
+	padding-top: 15px;
+	margin-right: 20px;
+}
+.pull-center{
+	text-align: center;
+}
+.alignleft{
+	text-align: left;
+}
+.font4{
+	font-size: 18px;
+}
+.big300{
+	font-size: 300%
+}
+</style>
+<div class="row well">
+	<div class="col-xs-12 widget-container-span">
+		<div class="tabbable">
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a data-toggle="tab" href="#home">
+						用户指南
+					</a>
+				</li>
+		
+				<li>
+					<a data-toggle="tab" href="#profile">
+						快速上手
+					</a>
+				</li>
+				<li>
+					<a data-toggle="tab" href="#profile1">
+						常见问题
+					</a>
+				</li>
+			</ul>
+		
+			<div class="tab-content">
+				<div id="home" class="tab-pane in active">
+					<ul>
+						<li>CelLoud简介</li>
+						<li>如何使用CelLoud</li>
+						<li>充值和计费</li>
+						<li>服务限制</li>
+					</ul>
+				</div>
+		
+				<div id="profile" class="tab-pane">
+					<img alt="" src="img/total.png" width="100%">
+				</div>
+		
+				<div id="profile1" class="tab-pane">
+					<h3>FAQ</h3>
+					<ul>
+						<li>为什么我上传不了数据</li>
+						<li>为什么我上传数据总失败</li>
+						<li>为什么我运行不了数据</li>
+						<li>为什么我运行总失败</li>
+					</ul>
+					<h3>Detail</h3>
+					<h4>为什么我上传不了数据</h4>
+					<hr>
+					<p>请先检测您的网络是否正常</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+
+			</div><!-- /.main-container-inner -->
+		</div><!-- /.main-container -->
+		<!--[if IE]>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<![endif]-->
+		<!--[if !IE]> -->
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+		</script>
+		<!-- <![endif]-->
+		<!--[if IE]>
+		<script type="text/javascript">
+		 window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/typeahead-bs2.min.js"></script>
+		<!-- page specific plugin scripts -->
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+		<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/jquery.slimscroll.min.js"></script>
+		<script src="assets/js/jquery.easy-pie-chart.min.js"></script>
+		<script src="assets/js/jquery.sparkline.min.js"></script>
+		<script src="assets/js/flot/jquery.flot.min.js"></script>
+		<script src="assets/js/flot/jquery.flot.pie.min.js"></script>
+		<script src="assets/js/flot/jquery.flot.resize.min.js"></script>
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+	</body>
+</html>

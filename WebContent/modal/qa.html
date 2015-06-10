@@ -1,0 +1,203 @@
+<style>
+.totop{
+	padding-top: 20px;
+}
+.pull-center{
+	text-align: center;
+}
+.clearPos{
+	position: static;
+}
+.toleft{
+	text-align: left;
+}
+.btnpos{
+	position: absolute;
+	right: 40px;
+	top: 20px;
+}
+</style>
+<div class="tabbable tabs-left">
+	<div class="col-xs-12">
+		<a href="#qaModal" data-toggle="modal" class="btn btn-primary">
+			<i class="icon-beaker align-top bigger-125"></i>
+			新问题
+		</a>
+	</div>
+	<ul class="nav nav-tabs totop">
+		<li class="active">
+			<a data-toggle="tab" href="#home3">
+				<p>已解决：文件上传不成功</p>
+				<p>提问时间：2015-04-22 12:00</p>
+				<p>文件上传不成功，应该怎么操作？</p>
+			</a>
+		</li>
+
+		<li>
+			<a data-toggle="tab" href="#profile3">
+				<p>已解决：文件上传不成功</p>
+				<p>提问时间：2015-04-22 12:00</p>
+				<p>文件上传不成功，应该怎么操作？</p>
+			</a>
+		</li>
+
+		<li>
+			<a data-toggle="tab" href="#dropdown13">
+				<p>已解决：文件上传不成功</p>
+				<p>提问时间：2015-04-22 12:00</p>
+				<p>文件上传不成功，应该怎么操作？</p>
+			</a>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<div id="home3" class="tab-pane in active">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="toleft">
+						<p>文件上传不成功</p>
+						<p>提问时间：2015-04-22 12:00</p>
+						<p>文件上传不成功，应该怎么操作？</p>
+					</div>
+					<button class="btn btnpos">已解决
+					</button>
+				</div>
+				<div class="modal-body step-content">
+					<form class="form-horizontal">
+						<h3>附件：</h3>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<img alt="" src="assets/images/cmp.png" width="200px;">
+								<img alt="" src="assets/images/VSP.png" width="200px;">
+								<img alt="" src="assets/images/cmp.png" width="200px;">
+							</div>
+						</div>
+						<div class="space-4"></div>
+					</form>
+				</div>
+				<div class="modal-footer toleft">
+					<h3>解答：</h3>
+					<p>鉴于您的问题，鉴于您先检测网络是否正常，然后重新上传失败的文件。 也可以下载客户端上传</p>
+				</div>
+			</div>
+		</div>
+		<div id="profile3" class="tab-pane">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="toleft">
+						<p>文件上传不成功</p>
+						<p>提问时间：2015-04-22 12:00</p>
+						<p>文件上传不成功，应该怎么操作？</p>
+					</div>
+					<button class="btn btnpos">已解决
+					</button>
+				</div>
+				<div class="modal-body step-content">
+					<form class="form-horizontal">
+						<h3>附件：</h3>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<img alt="" src="assets/images/cmp.png" width="200px;">
+								<img alt="" src="assets/images/VSP.png" width="200px;">
+							</div>
+						</div>
+						<div class="space-4"></div>
+					</form>
+				</div>
+				<div class="modal-footer toleft">
+					<h3>解答：</h3>
+					<p>鉴于您的问题，鉴于您先检测网络是否正常，然后重新上传失败的文件。 也可以下载客户端上传</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="dropdown13" class="tab-pane">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="toleft">
+						<p>文件上传不成功</p>
+						<p>提问时间：2015-04-22 12:00</p>
+						<p>文件上传不成功，应该怎么操作？</p>
+					</div>
+					<button class="btn btnpos">已解决
+					</button>
+				</div>
+				<div class="modal-body step-content">
+					<form class="form-horizontal">
+						<h3>附件：</h3>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<img alt="" src="assets/images/cmp.png" width="200px;">
+							</div>
+						</div>
+						<div class="space-4"></div>
+					</form>
+				</div>
+				<div class="modal-footer toleft">
+					<h3>解答：</h3>
+					<p>鉴于您的问题，鉴于您先检测网络是否正常，然后重新上传失败的文件。 也可以下载客户端上传</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="qaModal" class="modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header wizard-actions" data-target="#modal-step-contents">
+				<div class="pull-left">
+					<h4>新问题</h4>
+				</div>
+				<button class="btn btn-danger btn-sm" data-dismiss="modal">
+					<i class="icon-remove"></i>
+				</button>
+			</div>
+			<div class="modal-body step-content">
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 标题 </label>
+
+						<div class="col-sm-9">
+							<input type="text" id="form-field-1" placeholder="title" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+					<div class="space-4"></div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label no-padding-right"> 描述 </label>
+						<div class="col-sm-9">
+							<textarea rows="10" class="col-xs-10 col-sm-7 clearPos"></textarea>
+						</div>
+					</div>
+					<div class="space-4"></div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label no-padding-right"> 附件一 </label>
+						<div class="col-sm-9">
+							<input type="file" id="form-field-1" placeholder="title" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+					<div class="space-4"></div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label no-padding-right"> 附件二 </label>
+						<div class="col-sm-9">
+							<input type="file" id="form-field-1" placeholder="title" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+					<div class="space-4"></div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label no-padding-right"> 附件三 </label>
+						<div class="col-sm-9">
+							<input type="file" id="form-field-1" placeholder="title" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+					<div class="space-4"></div>
+					<div class="form-group alert-success">
+						<label class="col-sm-12 no-padding-right"> 附件支持格式：txt / jpg / jpeg / png，最大2M，每个问题最多可上传3个附件 </label>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer wizard-actions pull-center">
+				<a href="javascript:void(0)" class="btn btn-success">提交</a>
+			</div>
+		</div>
+	</div>
+</div>
